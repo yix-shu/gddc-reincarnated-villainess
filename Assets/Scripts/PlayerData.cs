@@ -14,9 +14,10 @@ public class PlayerData
     {
         level = player.level;
         inventory = player.inventory;
-        position = new float[2]; //I only initialized an array of size 2 bc it's 2D
+        position = new float[3];
         position[0] = player.transform.position.x;
         position[1] = player.transform.position.y;
+        position[2] = player.transform.position.z;
     }
 }
 
