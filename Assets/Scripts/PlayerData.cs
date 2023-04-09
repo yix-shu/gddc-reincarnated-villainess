@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable] //this will allow us to save as a file
-public class PlayerData
+public class PlayerData : MonoBehaviour
 {
     //set and save all the player properties/data
     public int level;
     public object[] inventory; //not sure how the inventory is going to be stored, so I am keeping it like this
-    public float[] position;
+    private float[] position;
 
     public PlayerData(Player player)
     {
